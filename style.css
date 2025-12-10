@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 20px;
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-color: rgb(252, 251, 251);
+    width: auto;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 120px;
+    padding: 20px;
+    }
+.card{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.03);
+    transition: 0.3s ease-in;
+    height: auto;
+    border: 2px solid black;
+    
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.tables{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 50%;
+    border-radius: 6px;
+    
+    
+}
+
+table{
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+th{
+    background-color: goldenrod;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center; 
+    font-size: 20px;
+    
+}
+td {
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center; 
+    column-width: 200px ;
+}
+
+td:hover{
+    background-color: rgb(28, 184, 176);
+}
+.card button{
+    margin-top: 10px;
+    padding: 10px 50px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+img{
+    width: 150px;
+    height: 150px;
+   
+}
+.card:hover{
+    transform: translateY(-6%);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    background-color: rgb(28, 184, 176) ;
+}
+button:hover{
+    text-decoration: underline;
+
+}
