@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-Details</title>
+    <style>
+        body{
+            background-color:skyblue;
+            color: #f0ec08;
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+           background-color:  orange; 
+           border:3px solid #121211;
+           margin :10%;
+           width: 500px;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .row h3{
+            margin-bottom: 10px;
+        }
+        select{
+            padding: 10px;
+            width: 100%;
+            margin-top: auto;
+        }
+        .container button{
+            margin-left: 60%;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: green;
+            transition: 0.3s ease;
+            color: #FFFFFF;
+        }
+
+        button:hover{
+            background-color: #d16110c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Course Details</h1>
+        <div class="row">
+            <h3>Course Name</h3>
+            <select>
+                <option></option>
+                <option>Full Stack Java</option>
+                <option>Web Development</option>
+                <option>Data Analyst</option>
+                <option>Python Development</option>
+            </select>
+        </div>
+        <div class="row">
+            <h3>Course Duration</h3>
+            <select>
+                <option></option>
+                <option>8 Months</option>
+                <option>6 Months</option>
+                <option>4 Months</option>
+                <option>2 Months</option>
+            </select>
+        </div>
+        <button onclick="window.location.href='preview.html'">Next</button>
+    </div>
+    
+</body>
+</html>

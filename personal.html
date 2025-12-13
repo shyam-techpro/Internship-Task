@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Information</title>
+    <style>
+        body {
+            background-color: skyblue;
+            color: #f0ec08;
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            background-color: orange;
+            border: 3px solid #121211;
+            margin: 10%;
+            width: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .personal-info h2 {
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            width: 100%;
+        }
+
+        input:hover {
+            border: 2px solid black;
+        }
+
+        .container button {
+            margin-right: 60%;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: green;
+            color: #FFFFFF;
+        }
+
+        button:hover {
+            background-color: #d16110c0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="personal-info">
+            <h2>Personal Information</h2>
+            <div class="row">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Middle Name">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Last Name">
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            <div class="row">
+                <input type="email" placeholder="Email">
+                <input type="date" placeholder="Date of Birth">
+            </div>
+        </div>
+
+        <div class="guardian-info">
+            <h2>Guardian Information</h2>
+
+            <div class="row">
+                <input type="text" placeholder="Guardian Name">
+                <input type="text" placeholder="Relation">
+            </div>
+            <div class="row">
+                <input type="tel" placeholder="Guardian Phone Number">
+            </div>
+            <div class="row">
+                <input type="email" placeholder="Guardian Email">
+            </div>
+        </div>
+
+        <button onclick="window.location.href='address.html'">Next</button>
+    </div>
+
+</body>
+
+</html>
