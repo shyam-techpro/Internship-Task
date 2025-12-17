@@ -1,99 +1,120 @@
-body{
-    margin: 0;
-    padding: 20px;
-    height: auto;
+body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: rgb(252, 251, 251);
-    width: auto;
-    
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-h1{
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    gap: 120px;
-    padding: 20px;
-    }
-.card{
-    background-color: whitesmoke;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 250px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.03);
-    transition: 0.3s ease-in;
-    height: auto;
-    border: 2px solid black;
-    
-}
-h2{
-    text-align: center;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-.tables{
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
-    height: 50%;
-    border-radius: 6px;
-    
-    
-}
-
-table{
-    width: 100%;
-    border-radius: 6px;
-
-}
-
-th{
-    background-color: goldenrod;
-    border: 2px solid black;
-    padding: 10px 20px;
-    text-align: center; 
-    font-size: 20px;
-    
-}
-td {
-    border: 2px solid black;
-    padding: 10px 20px;
-    text-align: center; 
-    column-width: 200px ;
-}
-
-td:hover{
-    background-color: rgb(28, 184, 176);
-}
-.card button{
-    margin-top: 10px;
-    padding: 10px 50px;
-    background: blue;
+header {
+    background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 8px;
+    padding: 20px 0;
+    text-align: center;
 }
-img{
-    width: 150px;
-    height: 150px;
-   
-}
-.card:hover{
-    transform: translateY(-6%);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    background-color: rgb(28, 184, 176) ;
-}
-button:hover{
-    text-decoration: underline;
 
+main {
+    padding: 20px;
+}
+
+section {
+    margin-top: 10px;
+    background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.container {
+    background-color: #4CAF50;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-left: 35%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+input{
+    
+    padding: 10px;
+    margin-top: 10px;
+}
+textarea{
+    padding: 20px;
+}
+label{
+    margin-top: 10px;
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 10vw;
+    margin: 10px;
+}
+
+input :hover{
+    border: 2px solid black;
+}
+button :hover{
+    background-color: #2e8b32;
+    border: black;
 }
